@@ -1,0 +1,47 @@
+.notification
+	.notice
+		ログインしました！
+	
+.wrapper.clearfix
+	.side-bar
+		.header
+			%h3.header__name
+				Toda Takahisa
+			%ul.header__lists
+				%li.list
+					%a{ href: 'https://thawing-stream-63240.herokuapp.com/users/7362/edit'}
+						%i.fa.fa-cog.icon.icon-color
+				%li.list
+					%a{ href: 'https://thawing-stream-63240.herokuapp.com/groups/new'}
+						%i.fa.fa-pencil-square-o.icon.icon-color
+		.groups
+			.group
+				%a{ href: 'https://thawing-stream-63240.herokuapp.com/groups/new'}
+					.group__name luz
+					.group__message hello!!
+
+	.chat
+		.header
+			.left-header
+				.left-header__title luz
+				%ul.left-header__members
+					Member：
+					%li.member
+						Toda Takahisa
+			.right-header
+				%a{ href: 'https://thawing-stream-63240.herokuapp.com/groups/new' ,class: "right-header__button" } Edit
+		.messages.js-messages
+			.message
+				.upper-message
+					.upper-message__user-name Toda Takahisa
+					.upper-message__date 2018/07/08 09:52
+				.lower-message
+					%p.lower-message__content hello!
+		.form
+			%input{ placeholder: "type a message", type: "text", class: "form__message js-content", id: "message_content"}
+			.form__mask
+				.form__mask__image
+					%i.fa.fa-picture-o.icon
+			%input{ value: "Send", type: "submit", class: "form__submit"}
+
+
